@@ -1,4 +1,5 @@
 FROM openjdk:8u121-jdk-alpine as base-image
+LABEL "io.rancher.container.network"="true"
 VOLUME /var/jenkins_home
 ARG user=jenkins
 ARG group=jenkins
